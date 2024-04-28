@@ -20,6 +20,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.room.Room
 import com.koi.notes.data.NotesDatabase
+import com.koi.notes.presentation.AddNoteScreen
 import com.koi.notes.presentation.NotesScreen
 import com.koi.notes.presentation.NotesViewModel
 import com.koi.notes.ui.theme.NotesTheme
