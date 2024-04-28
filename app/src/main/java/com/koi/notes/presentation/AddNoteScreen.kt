@@ -29,10 +29,11 @@ fun AddNoteScreen(
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(onClick = {
-                NotesEvents.SaveNote(
+                onEvent(NotesEvents.SaveNote(
                     title = state.title.value,
                     description = state.description.value
-                )
+                ))
+                navController.popBackStack()
             }) {
 
                 Icon(

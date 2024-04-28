@@ -1,6 +1,5 @@
 package com.koi.notes.presentation
 
-import android.graphics.drawable.Icon
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -130,9 +129,8 @@ fun NoteItem(
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = state.notes[index].title,
-                fontSize = 18.sp,
-                fontWeight = FontWeight.SemiBold,
+                text = state.notes[index].description,
+                fontSize = 16.sp,
                 color = MaterialTheme.colorScheme.onSecondaryContainer
             )
 
